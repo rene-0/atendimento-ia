@@ -1,0 +1,28 @@
+# 🤖 WhatsApp Lanchonete Bot
+
+Um **assistente automatizado de pedidos via WhatsApp**, integrado com a **API oficial da Meta (Cloud API)** e **Inteligência Artificial (OpenAI GPT)**.  
+Desenvolvido em **Node.js + TypeScript**, este projeto simula um atendimento de lanchonete inteligente, capaz de responder dúvidas, mostrar o cardápio e registrar pedidos de forma natural.
+
+---
+
+## 🚀 Funcionalidades
+
+- ✅ Envio de mensagens via **API oficial do WhatsApp Cloud (Meta)**
+- 💬 Atendimento automatizado com **IA (OpenAI / GPT-4o-mini)**
+- 🧠 **Memória de conversa** (por número de telefone)
+- 🍔 Exemplo de fluxo de cardápio e pedidos
+- 🧩 Estrutura modular e pronta para expansão
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+| Camada                  | Tecnologias              |
+| ----------------------- | ------------------------ |
+| Linguagem               | Node.js + TypeScript     |
+| Integração WhatsApp     | Meta WhatsApp Cloud API  |
+| Inteligência Artificial | OpenAI API (GPT-4o-mini) |
+| HTTP Client             | Axios                    |
+| Execução Dev            | ts-node-dev              |
+
+---
