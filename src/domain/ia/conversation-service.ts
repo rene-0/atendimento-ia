@@ -31,7 +31,6 @@ export async function getAIResponse(message: string, from: string) {
 
   userMessages.set(from, [...(userMessages.get(from) || []), message])
 
-  // console.log("Open IA", JSON.stringify(completion, null, 2))
   aiAnswers.set(from, [...(aiAnswers.get(from) || []), answer])
 
   return answer

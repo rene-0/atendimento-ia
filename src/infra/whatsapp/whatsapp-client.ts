@@ -1,6 +1,5 @@
 import axios from "axios"
 
-// const WHATSAPP_API_URL = "https://graph.facebook.com/v21.0"
 const WHATSAPP_API_URL = "https://graph.facebook.com/"
 
 export class WhatsAppClient {
@@ -32,9 +31,6 @@ export class WhatsAppClient {
         }
       )
 
-      console.log("WhatsAppClient", JSON.stringify(response.data, null, 2))
-
-      console.log("✅ Mensagem enviada:", response.data)
       return response.data
     } catch (error: any) {
       console.error("❌ Erro ao enviar mensagem:", error.response?.data || error.message)

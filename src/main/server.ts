@@ -19,8 +19,6 @@ app.get("/", (req, res) => {
 })
 
 app.post("/", (req: Request<any, any, MessageRequest>, res) => {
-  // const timestamp = new Date().toISOString().replace("T", " ").slice(0, 19)
-  // console.log(`\n\nWebhook received ${timestamp}\n`)
   req.body.entry.forEach((entry) => {
     entry.changes.forEach((change) => {
       change.value.messages?.forEach(async (message) => {
@@ -32,7 +30,6 @@ app.post("/", (req: Request<any, any, MessageRequest>, res) => {
       })
     })
   })
-  // console.log(JSON.stringify(req.body, null, 2))
   res.status(200).end()
 })
 
